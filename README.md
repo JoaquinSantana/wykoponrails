@@ -1,6 +1,6 @@
 # Wykoponrails
 
-TODO: Write a gem description
+This is a ruby wrapper for the Wykop Web API -> http://wykop.pl.
 
 ## Installation
 
