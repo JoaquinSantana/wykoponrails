@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Wykoponrails::VERSION
   spec.authors       = ["Tomasz Panek"]
   spec.email         = ["joachimsantana@gmail.com"]
-  spec.summary       = %q{ WykopOnRails - Ruby wrapper for Wykop API }
+  spec.summary       = %q{ WykopOnRails - Ruby wrapper for Wykop API http://wykop.pl }
   spec.description   = %q{Gem supported API Wykop.pl }
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/JoaquinSantana/wykoponrails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
