@@ -12,9 +12,6 @@ module Wykoponrails
 	KEY_APP = file["key_app"]
 
 
-	def self.loguj(url)
-		Digest::MD5.hexdigest(SECRET_KEY + url)
-	end
 
 	def self.tag(tag)
 		url = "http://a.wykop.pl/tag/index/#{tag},appkey,#{KEY_APP}"
@@ -28,4 +25,10 @@ module Wykoponrails
 		res = get(url, :headers => { 'apisign' => loguj(url) })
 	end
 
+	private
+
+		def self.loguj(url)
+			Digest::MD5.hexdigest(SECRET_KEY + url)
+		end
+	
 end
